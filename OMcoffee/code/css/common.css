@@ -1,0 +1,183 @@
+@charset "utf-8";
+/***********页面通用样式*********/
+a{
+	cursor:pointer;
+	text-decoration:none;
+	width:100%;
+	}
+a:visited{ color:inherit;}
+a:link{ color:inherit;}
+	
+/*********全局*********/
+*{
+	padding:0px;
+	margin:0px;
+	font-family:"微软雅黑";
+	}
+body{
+	width:1920px;
+	height:1000px;
+	margin:0px auto;
+	background-image:url(../images/bg_main.jpg);
+	}
+	
+/*********公共 - 顶部********/
+.header_wrap{
+	 height:120px;
+	 width:1920px;
+	 margin:0px auto;
+	 color:#FFF;
+	 /****背景色渐变***/
+	 FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#7F3E16,endColorStr=#4E260D); /*IE 6 7 8*/ 
+     background: -ms-linear-gradient(top, #7F3E16,  #4E260D);        /* IE 10 */
+     background:-moz-linear-gradient(top,#7F3E16,#4E260D);/*火狐*/ 
+     background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#7F3E16), to(#4E260D));/*谷歌*/ 
+     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7F3E16), to(#4E260D));      /* Safari 4-5, Chrome 1-9*/
+     background: -webkit-linear-gradient(top, #7F3E16, #4E260D);   /*Safari5.1 Chrome 10+*/
+     background: -o-linear-gradient(top, #7F3E16, #4E260D);  /*Opera 11.10+*/
+	 box-shadow: inset 0px -11px 8px #3D1903;
+	 border-bottom:#7E3F14 2px solid;
+	 }
+.header_wrap .header{
+	width:1210px;
+	margin:0px auto;
+	}
+ /**logo**/
+.header_wrap .header .logo{
+	background-image:url(../images/logo.png);
+	height:120px;
+	width:340px;
+	float:left;
+	background-position:left;
+	background-repeat:no-repeat;
+	} 
+ /**导航菜单**/
+.nav{
+	list-style-type:none;
+	position:relative;
+	}
+.header_wrap .header ul li{
+	float:left;
+	height:120px;
+	line-height:140px;
+	width:108px;
+	text-align:center;
+	text-shadow:3px 3px 2px #333333;
+	font-size:17px;	
+	position:relative;
+	z-index:1;
+	}
+	
+ /**指标**/
+.header_wrap .header .nav .nav_selected{
+	background-color:#CE1D2D;
+	height:4px;
+	border-radius: 10px;
+	position:absolute;
+	left:0px;
+	}
+.header_wrap .header .nav .nav_selected:after{
+    border:10px solid transparent;
+    border-top:12px solid #CF1D2D;
+    width:0px;
+    height:0px;
+    position:absolute;
+    content:'';
+	left:44px;
+    }  
+ /**会员中心的二级菜单**/ 
+ .header_wrap .header .nav ul:before{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+    width: 0;
+    height: 0;     /****内凹箭头 未完成**/
+  	}
+.header_wrap .header .nav ul{
+	list-style-type:none;
+	background-color:#4E260D;
+	width:108px;
+	height:110px;
+	position:absolute;
+	top:100px;
+	display:none;
+	z-index:2;
+	left:880px;
+	border-radius:2px;
+	}
+.header_wrap .header .nav ul p{
+	width:108px;
+	height:36px;
+	z-index:2px;
+	top:-50px;
+	font-size:15px;
+	line-height:33px;
+	padding-left:23px;
+	}
+.header_wrap .header .nav ul p:hover{ color:#CD1E2B; }
+ /**登陆条**/
+.header_wrap .loginbar{
+	margin-left:15px;
+	width:200px;
+	float:left;
+	}
+.header_wrap .loginbar ul li{
+	font-size:12px;
+	list-style-type:none;
+	float:left;
+	height:120px;
+	line-height:40px;
+	text-shadow:2px 2px 1px #666666;
+	}
+.header_wrap .loginbar ul li a{
+	padding-left:2px; 
+	padding-right:1px; 	
+	}
+.header_wrap .loginbar ul li a:hover{  background-color:#2C0900; }
+
+		 
+
+
+	
+/**********公共 - 页脚********/
+.footer{
+	clear:both;
+	width:1920px;
+	height:130px;
+	/****背景色渐变***/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#3B1700,endColorStr=#6E3613); /*IE 6 7 8*/ 
+    background: -ms-linear-gradient(top, #3B1700,  #6E3613);        /* IE 10 */
+    background:-moz-linear-gradient(top,#3B1700,#6E3613);/*火狐*/ 
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#3B1700), to(#6E3613));/*谷歌*/ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3B1700), to(#6E3613));      /* Safari 4-5, Chrome 1-9*/
+    background: -webkit-linear-gradient(top, #3B1700, #6E3613);   /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #3B1700, #6E3613);  /*Opera 11.10+*/
+	text-align:center;	
+	}
+.footer .footer_content{
+	height:130px;
+	background-image:url(../images/footer_bg.png);
+	background-position:left 30px;
+	background-repeat:no-repeat;
+	margin:0px auto;
+	width:1060px;
+	}
+.footer .footer_content .subnav_bottom{
+	padding-top:38px;
+	color:#FFFEFF;
+	font-size:15px;
+	}
+
+.footer .footer_content .subnav_bottom span a:hover{ color:#CD1F29; }
+.footer .footer_content .copyright{
+	font-size:12px;
+	color:#FEFFFF;
+	position:relative;
+	margin-top:3px;
+	}
+.footer .footer_content .copyright .footer_img{
+	position:absolute;
+	left:960px;
+	top:-6px;
+	}
+

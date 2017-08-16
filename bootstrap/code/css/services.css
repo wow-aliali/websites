@@ -1,0 +1,144 @@
+/* =============
+    自定义样式
+   ============= */
+
+/**** 头部 ****/
+/** 主导航 **/
+.mainNav .collapse ul li:nth-of-type(2) a{
+    background-image: linear-gradient(to bottom,#EEF2F6,#FFF);
+    border-top: 3px solid #31A7DE;
+}
+@media screen and (max-width:768px){
+    .mainNav .collapse ul li:nth-of-type(2) a{
+        color: #31A7DE;
+        background: none;
+        border-top: none;
+    }
+}
+
+/** 巨幕 **/
+.jumbotron{
+    padding: 0; margin: 0;
+    color: #2C4755;
+    background: transparent;
+}
+.jumbotron > img{
+    width: 100%;
+    min-height: 223px;
+    z-index: -10;
+    position: absolute;
+}
+.jumbotron .container{
+    width: 60%;
+    line-height: 30px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+.jumbotron .container p{font-size: 14px;}
+
+@media screen and (max-width:992px) {
+    .jumbotron > img{
+        position: relative;
+        min-height: 150px;
+    }
+    .jumbotron .container{
+        width: 90%;
+    }
+}
+
+/**** 主体 ****/
+/** 服务器特点 **/
+.serversFeature .container{
+    width: 45%;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.serversFeature .media-body{padding-left: 90px;}
+.serversFeature .media-body h2{line-height: 50px;}
+.serversFeature .media-body p:nth-of-type(2){margin-top: 20px;}
+
+@media screen and (max-width:768px) {
+    .serversFeature .container{
+        width: 100%;
+        min-width: 0px;
+    }
+    .serversFeature .media-left{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .serversFeature .media-left img{
+        margin: 0px auto;
+    }
+    .serversFeature .media-body{
+        display: block;
+        width: 300px;
+        padding-top: 20px;
+        padding-left: 0px;
+        margin: 0px auto;
+    }
+    .serversFeature .media-body h2{
+        text-align: center;
+    }
+    .serversFeature .media-body p:not(:first-of-type){
+        padding-left: 60px;
+    }
+}
+
+.serversFeature_2 .media-left{display: none;}
+.serversFeature_2 .media-body{
+    padding-left: 0px;
+    padding-right: 45px;
+}
+.serversFeature_3 .media-left img {margin-left: 30px;}
+@media screen and (max-width:768px) {
+    .serversFeature_3 .media-left img {
+        margin-left: auto;
+    }
+    .serversFeature_2 .media-body{
+        padding-right: 0px;
+    }
+    .serversFeature_2 .media-left{
+        display: block;
+    }
+    .serversFeature_2 .media-right{
+        display: none;
+    }
+}
+
+/** 为什么我们最好 **/
+.whyBest h3{
+    margin-top: 70px;
+    margin-bottom: -1.2%;
+}
+.whyBest .container{
+    width: 960px;
+}
+.whyBest .container .col-md-4{
+    padding-bottom: 10px;
+}
+.whyBest .container .leftImg{
+    width: 60px; height: 80px;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.whyBest .container .rightContent h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.whyBest .container .rightContent p{
+    color: #6E8290;
+}
+@media screen and (max-width:992px) {
+    .whyBest .container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:430px) {
+    .whyBest .container{
+        width: 80%;
+    }
+}

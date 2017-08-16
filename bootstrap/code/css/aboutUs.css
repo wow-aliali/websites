@@ -1,0 +1,185 @@
+/* =============
+    自定义样式
+   ============= */
+
+/**** 头部 ****/
+/** 主导航 **/
+.mainNav .collapse ul li:nth-of-type(4) a{
+    background-image: linear-gradient(to bottom,#EEF2F6,#FFF);
+    border-top: 3px solid #31A7DE;
+}
+@media screen and (max-width:768px){
+    .mainNav .collapse ul li:nth-of-type(4) a{
+        color: #31A7DE;
+        background: none;
+        border-top: none;
+    }
+}
+
+/** 巨幕 **/
+.jumbotron{
+    padding: 0; margin: 0;
+    color: #2C4755;
+    background: transparent;
+}
+.jumbotron > img{
+    width: 100%;
+    min-height: 223px;
+    z-index: -10;
+    position: absolute;
+}
+.jumbotron .container{
+    width: 60%;
+    line-height: 30px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+.jumbotron .container p{font-size: 14px;}
+
+@media screen and (max-width:992px) {
+    .jumbotron > img{
+        position: relative;
+        min-height: 150px;
+    }
+    .jumbotron .container{
+        width: 90%;
+    }
+}
+
+/**** 主体 ****/
+/** 服务器特点 **/
+.serversFeature .container{
+    width: 45%;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.serversFeature .media-body{padding-left: 90px;}
+.serversFeature .media-body h2{line-height: 50px;}
+.serversFeature .media-body p:nth-of-type(2){margin-top: 20px;}
+
+@media screen and (max-width:768px) {
+    .serversFeature .container{
+        width: 100%;
+        min-width: 0px;
+    }
+    .serversFeature .media-left{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .serversFeature .media-left img{
+        margin: 0px auto;
+    }
+    .serversFeature .media-body{
+        display: block;
+        width: 300px;
+        padding-top: 20px;
+        padding-left: 0px;
+        margin: 0px auto;
+    }
+    .serversFeature .media-body h2{
+        text-align: center;
+    }
+    .serversFeature .media-body p:not(:first-of-type){
+        padding-left: 60px;
+    }
+}
+
+/** 我们能做什么 **/
+.whatWeDo h3,.team h3,.company h3{
+    margin-top: 50px;
+    margin-bottom: -1.2%;
+}
+.whatWeDo .container{
+    width: 960px;
+}
+.whatWeDo .container .col-md-4{
+    padding-bottom: 10px;
+}
+.whatWeDo .container .leftImg{
+    width: 60px; height: 80px;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.whatWeDo .container .rightContent h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.whatWeDo .container .rightContent p{
+    color: #6E8290;
+}
+@media screen and (max-width:992px) {
+    .whatWeDo .container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:430px) {
+    .whatWeDo .container{
+        width: 80%;
+    }
+}
+
+/** 团队 **/
+.team .team-member{
+    height: 310px;
+    background: url(../img/aboutUs_team_member_bg.png) no-repeat center center;
+    margin-bottom: 30px;
+    padding-top: 215px;
+}
+.team .team-member p{
+    width: 220px;
+    line-height: 20px;
+    font-size: 10px;
+    color: #637988;
+    margin: 0px auto;
+    padding: 0 20px;
+}
+.team .team-member .member-name{
+    font-size: 19px;
+    font-weight: 600;
+    color: #374351;
+}
+
+@media screen and (min-width:590px) and (max-width:768px){
+    .team .team-member{
+        width: 50%;
+        float: left;
+    }
+    .team .row{
+        width: 90%;
+        margin: 0px 5%;
+    }
+}
+
+/** 公司 **/
+.company{margin-bottom: 60px;}
+.carousel .carousel-inner img{
+    width: 100%; height: auto;
+}
+.carousel .carousel-thumbnail{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel .carousel-thumbnail a{width: 17%;}
+.carousel .carousel-thumbnail img{width: 100%;}
+.company .company-content p{color: #637988;}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .company .company-content p:last-of-type{
+        display: none;
+    }
+}
+@media screen and (max-width:992px){
+    .company .company-content{
+        margin-top: 30px;
+    }
+    .carousel .carousel-inner,.carousel .carousel-thumbnail,.company .company-content{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

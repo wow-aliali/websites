@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */	
+/*** 导航栏附加  ***/
+.header_wrap .header ul li:nth-child(3){ color:#CE1D2D; }
+.header_wrap .header ul li:nth-child(3) a{ color:#CE1D2D; }
+/*** 页脚附加 ***/
+.footer .footer_content .subnav_bottom span:nth-child(3) a{ color:#CD1F29; }
+
+a:link {
+	color: #FFF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	color: #E47536;
+}
+a:active {
+	text-decoration: none;
+}
+
+/***整体***/
+.middle{
+	margin:35px auto 1px auto;
+	width:1240px;
+	height:620px;
+	}
+/***导航栏下的图片***/
+.top_bg{
+	height:110px;
+	width:1920px;
+	margin:auto;	
+	}
+/***左边图片***/
+.middle .left{
+	margin-right:20px;	
+	display:block;
+	float:left;
+	width:218px;
+	height:575px;
+	}
+/***右边图文（不包括右上角的链接）***/
+.middle .right #scroll_content {
+	margin-top:50px;
+	height:450px;
+	width:910px;
+	}
+.right{
+	padding:20px;
+	float:right;
+	width:950px;
+	height:575px;
+	background:url(../images/bg_right.jpg);
+	background-repeat:no-repeat;
+}
+/***当前位置链接***/
+.right span, .right span a{
+	font-family:"微软雅黑";
+	color:#FFF;
+	font-size:12px;
+}
+.middle .right .minimenu span {
+	padding-left:26px;
+	}
+.middle .right .minimenu span .news {
+	font-size:16px;
+	}
+
+/***右边的图片框***/	
+
+.middle .right .right_content {
+	height:250px;
+	display:block;
+	float:left;	
+	}	
+.middle .right img {
+	padding:0px 20px 0px 26px;
+}
+
+/***右边的文字框***/	
+.main .middle .right .right_content0 a .word{
+	float:right;
+	font-size:14px;
+	}
+.middle .right .right_content0 {
+	width:538px;
+	height:250px;
+	float:left;		
+	} 
+.middle .right .right_content0 p {
+	word-spacing:10px;
+	line-height:25px;
+	color:#FFF;
+	font-size:14px;
+	}			

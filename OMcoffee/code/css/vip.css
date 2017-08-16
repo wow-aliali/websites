@@ -1,0 +1,110 @@
+@charset "utf-8";
+/*** 导航栏附加  ***/
+.header_wrap .header ul li:nth-child(6){ color:#CE1D2D; }
+/*** 页脚附加 ***/
+.footer .footer_content .subnav_bottom span:nth-child(6) a{ color:#CD1F29; }
+
+/**导航下面的背景**/
+.top_bg{
+	width:1920px;
+	height:40px;
+	}
+	
+/******** 主体 *********/
+.main{
+	margin:0px auto;
+	width:1200px;
+	height:615px;
+    }
+/*****左部*****/
+.main .left{
+	width:216px;
+	height:447px;
+	background-image:url(../images/vip.png);
+	background-repeat:no-repeat;
+	float:left;
+	}
+/*****右部******/
+.main .right_wrap{
+	margin-left:20px;
+	width:960px;
+	height:673px;
+	float:left;
+	border-radius:12px;
+	background-image:url(../images/vip_right_bg.jpg);
+	color:#FFFFFF;
+	margin-bottom:48px;
+	}
+.main .right_wrap .right{
+	margin-top:15px;
+	width:910px;
+	height:458px;
+	padding:0px 30px 0px 45px;
+	position:relative;
+	}
+/**mini导航菜单**/
+.main .right_wrap .minimenu{ margin:32px 45px 0px 45px; }
+.main .right_wrap .minimenu{
+	color:#DED7D1;
+	font-size:13px;	
+	}
+.main .right_wrap .minimenu span:last-child{
+	font-size:16px;
+	color:#FFFFFF;
+	font-weight:500;
+	}
+.main .right_wrap .minimenu a:hover{ color:#CA1E2C;	}
+/**头像**/
+.main .right_wrap .right .rightIcon{
+	height:183px;
+	margin-right:30px; 
+    }
+.main .right_wrap .right .rightIcon p:nth-child(1){
+	height:105px;
+	text-align:center;
+	}
+.main .right_wrap .right .rightIcon p:nth-child(2){
+	height:25px;
+	text-align:center;
+	font-size:17px;
+	}
+.main .right_wrap .right .right_menu{
+	border-bottom:#CA1D2A 2px solid;
+	color:#CA1D2A;
+	}
+/**记录列表**/
+.main .right_wrap .right .rightRecord{
+	z-index:1;
+	width:850px;
+	height:225px;
+	text-indent:1em;
+	font-size:14px;
+	line-height:26px;
+	color:#EBE0D8;
+	padding-top:4px;
+	}
+.main .right_wrap .right div .right_menu:nth-child(1){
+	border-bottom:#9D5B1F solid 2px;
+	font-size:15px;
+	width:790px;
+	margin-bottom:2px;
+	padding-bottom:3px;
+	}
+/**客服**/
+.main .right_wrap .right .rightService{
+	width:753px;
+	height:68px;
+	background-color:#9D5A1E;
+	margin-top:38px;
+	margin-left:6px;
+	border-radius:8px;
+	padding:10px 70px 0px 22px;
+	font-size:13px;
+	text-indent:2em;
+	line-height:26px;
+	}
+	
+	
+	
+	
+	

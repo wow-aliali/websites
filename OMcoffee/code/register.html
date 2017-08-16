@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OM咖啡 - 欢迎注册</title>
+ <link href="css/common.css" rel="stylesheet" type="text/css"> 
+ <link href="css/register.css" rel="stylesheet" type="text/css"/>
+ <link href="css/easyform.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+ <!--公共 顶部-->
+ <div class="header_wrap">
+   <div class="header">
+    <div class="logo"></div>
+    <ul class="nav">
+     <li><a href="index.html">首页</a></li>
+     <li><a href="brand.html">品牌介绍</a></li>
+     <li><a href="news.html">新闻中心</a></li>
+     <li><a href="product.html">产品中心</a></li>
+     <li><a href="contactUs.html">联系我们</a></li>
+     <li><a href="vip.html">会员中心</a></li>
+     <li class="nav_selected" style="left:340px"></li>
+     <ul class="subnav">
+       <p><a href="vip_info.html">个人资料</a></p>
+       <p><a href="vip_changePwd.html">修改密码</a></p>
+       <p><a href="vip_record.html">购买记录</a></p>
+      </ul>
+    </ul>
+   </div> <!--header end-->
+   <div class="loginbar">
+     <ul>
+      <li>&nbsp;<a href="login.html">登录</a>&nbsp;&nbsp;<span style="color:#F00">|</span></li>
+      <li>&nbsp;&nbsp;<a href="register.html">注册</a></li>
+      <li>&nbsp;&nbsp;<img src="images/loginbar_shopingcart.png" /><a>购物车</a></li>
+      <li>&nbsp;&nbsp;<img src="images/loginbar_favorite.png" /><a href="#top">收藏夹</a></li>
+     </ul>
+   </div> <!--loginbar end-->
+  </div>  <!--header_wrap end-->
+
+ 
+ <!--主体  按各自页面内容修改-->
+ <div class="main">
+  <div class="minimenu">欢迎注册</div> 
+  <div class="middle">
+   <!--左边背景-->
+   <div class="leftBg"></div>
+   <!--右边登录内容-->
+   <div class="rightContent">
+   <form id="reg-form" action="" method="post">
+    <table border="1" cellspacing="12" cellpadding="0">
+     <tr height="20px">
+      <td></td>
+      <td valign="bottom"><img src="images/register_img1.png" /><div class="login_link"><a href="login.html"><img src="images/login_img2.png"/>已有账号</a></div></td>
+     </tr>
+     <tr>
+      <td class="textTd">手机号&nbsp;&nbsp;<img src="images/register_img2.png" /></td>
+      <td><input type="text" id="textInput1" name="uid"
+                               data-easyform="length:11;number;real-time;ajax:ajax_demo(1);"
+                               data-message="手机号必须为11位的数字"
+                               data-easytip="position:top;class:easy-red;" data-message-ajax="手机号已存在!"/><div class="getNumber"><a>获取手机验证码</a></div></td>
+     </tr>
+     <tr>
+      <td class="textTd">验证码&nbsp;&nbsp;<img src="images/register_img2.png" /></td>
+      <td><input id="textInput2" type="text" data-easyform="length:4;number;real-time;"
+                               data-message="验证码不正确"
+                               data-easytip="position:right;class:easy-red;"/></td>
+     </tr>
+     <tr>
+      <td class="textTd">密码&nbsp;&nbsp;<img src="images/register_img2.png" /></td>
+      <td><input id="textInput3" name="psw1" type="password" data-easyform="length:6 16;char-normal;real-time;"
+                               data-message="密码必须为6-16位英文、数字或下划线"
+                               data-easytip="position:right;class:easy-red;"  /></td>
+     </tr>
+     <tr>
+      <td class="textTd">确认密码&nbsp;&nbsp;<img src="images/register_img2.png" /></td>
+      <td><input id="textInput4" type="password" data-easyform="length:6 16;equal:#textInput3;real-time"
+                               data-message="两次密码输入要一致" data-easytip="class:easy-red;" /></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td valign="top"><input type="checkbox" style="vertical-align:middle" checked="checked" />&nbsp;我已阅读并同意《注册服务协议》</td>
+     </tr>     
+     <tr>
+      <td></td>
+      <td><input type="button" value="注&nbsp;&nbsp;&nbsp;册" class="regButton"/></td>
+     </tr>                         
+    </table>
+    </form>
+   </div>  <!--rightContent end-->
+  </div>  <!--middle end-->
+ </div> <!--main end-->
+
+ 
+ <!--公共 页脚-->
+ <div class="footer">
+  <div class="footer_content">
+   <p class="subnav_bottom">
+    <span><a href="index.html">首页</a>&nbsp;|&nbsp;</span>
+    <span><a href="brand.html">品牌介绍</a>&nbsp;|&nbsp;</span>
+    <span><a href="news.html">新闻中心</a>&nbsp;|&nbsp;</span>
+    <span><a href="product.html">产品中心</a>&nbsp;|&nbsp;</span>
+    <span><a href="contactUs.html">联系我们</a>&nbsp;|&nbsp;</span>
+    <span><a href="vip.html">会员中心</a></span>
+   </p><br/>  <!--subnav end-->
+   <p class="copyright">版权所有&nbsp;&copy;&nbsp;2013&nbsp;Mozilla&nbsp;Firefox.&nbsp;北京谋智火狐信息技术有限公司&nbsp;京ICP备11011334号&nbsp;京公网安备110105007294
+    <span class="footer_img"><a><img src="images/footer_img1.png" id="img1"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a><img src="images/footer_img2.png" id="img2"/></a>&nbsp;&nbsp;&nbsp;&nbsp;<a><img src="images/footer_img3.png" id="img3" /></a></span>
+   </p>   <!--copyright end-->
+  </div>  <!--footer_content end-->
+ </div> <!--footer end-->
+</body>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/commoc_nav.js"></script>
+<script type="text/javascript" src="js/SuperSlide.2.1.js"></script>
+<script type="text/javascript" src="js/register.js"></script>
+<script type="text/javascript" src="js/easyform.js"></script>
+
+</html>

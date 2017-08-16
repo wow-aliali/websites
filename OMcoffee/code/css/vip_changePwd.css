@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*** 导航栏  ***/
+.header_wrap .header ul li:nth-child(6){ color:#CE1D2D; }
+/*** 页脚附加 ***/
+.footer .footer_content .subnav_bottom span:nth-child(6) a{ color:#CD1F29; }
+
+/**导航下面的背景**/
+.top_bg{
+	width:1920px;
+	height:40px;
+	}
+	
+/******** 主体 *********/
+.main{
+	margin:0px auto;
+	width:1200px;
+	height:615px;
+    }
+/*****左部*****/
+.main .left{
+	width:216px;
+	height:447px;
+	background-image:url(../images/vip.png);
+	background-repeat:no-repeat;
+	float:left;
+	}
+/*****右部******/
+.main .right_wrap{
+	margin-left:20px;
+	width:960px;
+	height:673px;
+	float:left;
+	border-radius:12px;
+	background-image:url(../images/vip_right_bg.jpg);
+	color:#FFFFFF;
+	margin-bottom:48px;
+	}
+.main .right_wrap .right{
+	margin-top:32px;
+	width:910px;
+	height:453px;
+	padding:0px 30px 0px 45px;
+	}
+/**mini导航菜单**/
+.main .right_wrap .minimenu{ margin:32px 45px 0px 45px; }
+.main .right_wrap .minimenu{
+	color:#DED7D1;
+	font-size:13px;	
+	}
+.main .right_wrap .minimenu span:last-child{
+	font-size:16px;
+	color:#FFFFFF;
+	font-weight:500;
+	}
+.main .right_wrap .minimenu a:hover{ color:#CA1E2C;	}
+/***右部大图**/
+.main .right_wrap .right .right_img{
+	width:450px;
+	height:450px;
+	background-image:url(../images/vip_changePwd_right_img.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	float:left
+	}
+.main .right_wrap .right .right_changePwd{
+	width:430px;
+	float:left;
+	height:450px;
+	font-size:15px;
+	}
+.main .right_wrap .right .right_changePwd table{ border:none; }
+.main .right_wrap .right .right_changePwd table tr{ height:50px; border:none;}
+.main .right_wrap .right .right_changePwd table tr td{ border:none;}
+.main .right_wrap .right .right_changePwd table tr td:first-child{ width:76px;}
+.main .right_wrap .right .right_changePwd table tr td:last-child{ width:350px;}
+.main .right_wrap .right .right_changePwd table tr td input{
+	width:180px;
+	height:31px;
+	border:#F4D7AB solid 2px;
+	font-size:16px;
+	}
+.main .right_wrap .right .right_changePwd .right_notice{
+	height:136px;
+	width:314px;
+	background-color:#88451A;
+	border:#F4D7AD solid 2px;
+	margin-top:28px;
+	border-radius:6px;
+	padding:21px 16px;
+	}
+.main .right_wrap .right .right_changePwd .right_notice ol li{
+	list-style-position:inside;
+	font-size:13px;
+	line-height:24px;
+	height:24px;
+	}
+/**密码强度检测**/
+.pw-strength {
+	clear: both;
+	position: relative;
+	top: 8px;
+	width: 180px;
+	}
+.pw-bar{
+	background:url(../images/vip_changePwd_right_pwd-1.png) no-repeat -3px 0px;
+	height: 14px;
+	overflow: hidden;
+	width: 176px; 
+	border-radius:50px; 
+	}
+.pw-bar-on{
+	background:url(../images/vip_changePwd_right_pwd-2.png) no-repeat -3px 0px; 
+	width:0px; 
+	height:14px;
+	position: absolute;
+	top: 9px;
+	left: 2px;
+	transition: width .5s ease-in;
+	-moz-transition: width .5s ease-in;
+	-webkit-transition: width .5s ease-in;
+	-o-transition: width .5s ease-in; 
+	border-radius:50px;}
+.pw-weak .pw-defule{ width:0px;}
+.pw-weak .pw-bar-on {width: 60px;}
+.pw-medium .pw-bar-on {width: 120px;}
+.pw-strong .pw-bar-on {width: 179px;}
+.pw-txt {
+	padding-top: 2px;
+	width: 180px;
+	overflow: hidden;
+	}
+.pw-txt span {
+	color:#FF0;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	width: 58px;
+	}
+
+
+

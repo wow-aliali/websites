@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*** 导航栏附加  ***/
+.header_wrap .header ul li:nth-child(6){ color:#CE1D2D; }
+/*** 页脚附加 ***/
+.footer .footer_content .subnav_bottom span:nth-child(6) a{ color:#CD1F29; }
+
+/**导航下面的背景**/
+.top_bg{
+	width:1920px;
+	height:40px;
+	}
+	
+/******** 主体 *********/
+.main{
+	margin:0px auto;
+	width:1200px;
+	height:615px;
+    }
+/*****左部*****/
+.main .left{
+	width:216px;
+	height:447px;
+	background-image:url(../images/vip.png);
+	background-repeat:no-repeat;
+	float:left;
+	}
+/*****右部******/
+.main .right_wrap{
+	margin-left:20px;
+	width:960px;
+	height:673px;
+	float:left;
+	border-radius:12px;
+	background-image:url(../images/vip_right_bg.jpg);
+	color:#FFFFFF;
+	margin-bottom:48px;
+	}
+.main .right_wrap .right{
+	margin-top:15px;
+	width:910px;
+	height:453px;
+	padding:0px 30px 0px 45px;
+	position:relative;
+	}
+/**mini导航菜单**/
+.main .right_wrap .minimenu{
+	color:#DED7D1;
+	font-size:13px;	
+	margin:32px 45px 0px 45px;
+	position:relative;
+	}
+.main .right_wrap .minimenu span:last-child{
+	font-size:16px;
+	color:#FFFFFF;
+	font-weight:500;
+	}
+.main .right_wrap .minimenu a:hover{ color:#CA1E2C;	}
+
+/**头像**/
+.main .right_wrap .right .rightIcon{
+	height:183px;
+	margin-right:30px; 
+    }
+.main .right_wrap .right .rightIcon p:nth-child(1){
+	height:105px;
+	text-align:center;
+	}
+.main .right_wrap .right .rightIcon p:nth-child(2){
+	height:25px;
+	text-align:center;
+	font-size:17px;
+	}
+/**购买记录物品列表**/
+.main .right_wrap .right .rightRecord{
+	z-index:1;
+	width:850px;
+	height:325px;
+	}
+.main .right_wrap .right .right_menu{
+	border-bottom:#9D5B1F solid 2px;
+	font-size:15px;
+	width:790px;
+	margin-bottom:2px;
+	padding-bottom:3px;
+	position:relative;
+	}
+.main .right_wrap .right .right_menu span:nth-child(1){ padding-right:86px;}
+.main .right_wrap .right .right_menu span:nth-child(2){ padding-right:122px;}
+.main .right_wrap .right .right_menu span:nth-child(3){ padding-right:125px;}
+.main .right_wrap .right .right_menu span:nth-child(4){ padding-right:89px;}
+.main .right_wrap .right .right_menu span:nth-child(5){ padding-right:94px;}
+.main .right_wrap .right .right_menu ul{
+	color:#813C15;
+	list-style-type:none;
+	width:55px;
+	height:40px;
+	position:absolute;
+	top:25px;
+	left:44px;
+	background-color:#F7D7B0;
+	display:none;
+	}
+.main .right_wrap .right .right_menu ul li{ padding:5px; font-size:13px; padding-left:7px;}
+.main .right_wrap .right .rightRecord .recordList{
+	width:790px;
+	height:400px;
+	border:none;
+	font-size:14px;
+	}
+.recordList .recordList_nth{ margin-top:20px; height:82px; border:transparent solid 2px;}
+.recordList .recordList_nth div:not(:nth-child(5)){  float:left; text-align:left; line-height:82px;}
+.recordList .recordList_nth div:nth-child(1){ width:162px;}
+.recordList .recordList_nth div:nth-child(2){ width:182px; text-indent:10px;}
+.recordList .recordList_nth div:nth-child(3){ width:160px; text-indent:10px;}
+.recordList .recordList_nth div:nth-child(4){ width:150px; text-indent:10px;}
+.recordList .recordList_nth div:nth-child(5){ width:124px; text-indent:10px; float:left; text-align:left; line-height:41px;}
+.recordList .blankLine{ height:20px;}
+
+.recordList .recordList_nth div .redA{
+	color:#CA1E2C;
+	text-decoration:underline;
+	}
+.recordList .recordList_nth div a:hover{
+	color:#CA1E2C;
+	text-decoration:underline;
+	}
+
+
+

@@ -1,0 +1,221 @@
+@charset "utf-8";
+@charset "utf-8";
+/*** 导航栏附加  ***/
+.header_wrap .header ul li:nth-child(4){ color:#CE1D2D; }
+/*** 页脚附加 ***/
+.footer .footer_content .subnav_bottom span:nth-child(4) a{ color:#CD1F29; }	
+/****顶部图片*******/
+.top_bg{
+	width:1920px;
+	height:110px;
+	margin:0px auto;
+}
+/***正文****/
+.middle{
+	margin:31px auto 25px auto;
+	width:1200px;
+	height:598px;
+	background:url(../images/product_detail.jpg);
+	background-repeat:no-repeat;
+}
+.middle .scroll{
+	margin-top:40px;
+	width:1145px;
+	height:440px;
+}
+.product_minimenu a:hover{ color:#CE1D2F;}
+.product_minimenu a:nth-child(4){ font-size:15px;}
+/***当前位置链接***/
+.product_minimenu{
+	padding:30px 0px 0px 20px;
+	margin-left: 20px;
+	}
+.product_minimenu span, .product_minimenu span a{
+	font-family:"微软雅黑";
+	color:#FFF;
+	font-size:12px;
+}
+/*****左边特效******/
+
+/*****下方小图******/
+.product_list{
+	width:469px;
+	height:100px;
+	position:absolute;
+	top:335px;
+}
+.product_img .box{
+	display:block;
+	float:left;
+	margin-top:20px;
+	margin-right:5px;
+	margin-left:4px;
+}
+/****图片切换*****/
+.middle .product_img{
+	margin-left:40px;
+	width:469px;
+	height:500px;
+	position: relative;
+
+}
+.focus ul{
+	height: 329px;
+	position: absolute;
+
+}
+
+.focus ul li{
+	float: left;
+	width: 469px;
+	height: 329px;
+	overflow: hidden;
+	position: relative;
+}
+
+.focus ul li div{
+	overflow: hidden;
+	position: absolute;
+}
+.focus .preBtn{
+	width: 35px;
+	height: 60px;	
+	left: 0;
+	top:140px;
+	background:url(../images/spirteL.png) no-repeat 0 0;
+	background-color:#000;
+	cursor: pointer;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+.focus .nextBtn{
+	width: 35px;
+	height: 60px;
+	right:0px;
+	top:140px;
+	background:url(../images/spirteR.png) no-repeat right top;
+	background-color:#000;
+	cursor: pointer;	
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}
+	
+/****右边详情****/
+.product_info{
+	display:block;
+	float:right;
+	width:600px;
+	height:500px;
+}
+/***淳淳奇诺****/
+.product_info p{
+	font-family:"微软雅黑";
+	color:#F5E5C3;
+	font-size:30px;
+}
+/****价格框****/
+.product_info .price{
+	margin-top:15px;
+	margin-bottom:10px;
+	width:438px;
+	height:83px;
+	background:#673616;
+	line-height:35px;
+	padding-top:10px;
+
+}
+.product_info .price p{
+	text-indent:1em;
+	color:#FFF;
+	font-size:15px;
+}
+/*****价格****/
+.product_info .price .number{
+	font-size:30px;
+	color:#F00;
+}
+/*****支持*****/
+.product_info .price .pay{
+	font-family:"Adobe 黑体 Std R";
+	font-size:16px;
+	color:#F5E5C3;
+}
+
+
+/****订购框****/
+.product_info .order p{
+	font-family:"微软雅黑";
+	font-size:13px;
+	color:#F5E5C3;
+	text-transform:20px;
+	letter-spacing:2px;
+	line-height:35px;
+}
+.product_info .order span{
+	font-family:"微软雅黑";
+	font-size:16px;
+	color:#FFF;
+}
+#open_wrap{
+	position:relative;
+}
+.product_info .order #open{
+	position:absolute;
+	left:358px;
+	top:11px;
+	margin-left:25px;
+	background:#99541B;
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#FFF;
+}
+.product_info .order #open_in{
+	background:#5B2C0F;
+	width:105px;
+	height:50px;
+	position:absolute;
+	left:383px;
+	list-style-type:none;
+	display:none;
+	top:30px;
+	border-radius:3px;
+	
+}
+/****数量选择****/
+.quantity{
+	width:48px;
+	height:40px;
+	border:solid 1px #D0A970;
+	background:#F4DCB6;
+	text-align:center;
+}
+.quantity button{
+	border:solid 1px #D0A970;
+}
+/*****产品介绍*****/
+.introdution{
+	margin-top:35px;
+}
+.introdution h3{
+	width:85px;
+	height:26px;
+	font-family:"微软雅黑";
+	font-size:20px;
+	color:#FAE7C9;
+	background:#9E5A1D;
+	padding:5px;
+}
+.introdution p{
+	margin-top:10px;
+	text-indent:2em;
+	line-height:30px;
+	font-family:"宋体";
+	font-size:15px;
+	color:#FFFFFF;
+}
+
+
+
+
+
+

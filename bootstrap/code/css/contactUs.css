@@ -1,0 +1,132 @@
+/* =============
+    自定义样式
+   ============= */
+
+/**** 头部 ****/
+/** 主导航 **/
+.mainNav .collapse ul li:nth-of-type(5) a{
+    background-image: linear-gradient(to bottom,#EEF2F6,#FFF);
+    border-top: 3px solid #31A7DE;
+}
+@media screen and (max-width:768px){
+    .mainNav .collapse ul li:nth-of-type(5) a{
+        color: #31A7DE;
+        background: none;
+        border-top: none;
+    }
+}
+
+/** 巨幕 **/
+.jumbotron{
+    padding: 0; margin: 0;
+    color: #2C4755;
+    background: transparent;
+}
+.jumbotron > img{
+    width: 100%;
+    min-height: 223px;
+    z-index: -10;
+    position: absolute;
+}
+.jumbotron .container{
+    width: 60%;
+    line-height: 30px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+.jumbotron .container p{font-size: 14px;}
+
+@media screen and (max-width:992px) {
+    .jumbotron > img{
+        position: relative;
+        min-height: 150px;
+    }
+    .jumbotron .container{
+        width: 90%;
+    }
+}
+
+/**** 主体 ****/
+/** 办公信息 **/
+.officeInfo > p,.location p{
+    width: 720px;
+    color: #637988;
+    margin: 25px auto -20px auto;
+}
+.officeInfo .col-sm-4 p{
+    color: #637988;
+    line-height: 16px;
+}
+.officeInfo .col-sm-4 .officeInfo-name{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2C4755;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .officeInfo > p,.location p{
+        width: 85%;
+        min-width: 0px;
+    }
+    .officeInfo .col-sm-4:not(:first-of-type){
+        margin-top: 35px;
+    }
+}
+
+/** 办公位置 */
+.location,.sendMail{margin-top: 80px;}
+.location .container-fluid{padding: 0;}
+.location .location-map{
+    height: 300px;
+    line-height: 300px;
+    font-size: 3rem;
+    color: #FFF;
+    background: #2C4755;
+}
+@media screen and (max-width:768px) {
+    .location .location-map{
+        height: 200px;
+        line-height: 200px;
+    }
+}
+
+/** 发邮件给我们 **/
+.sendMail form{
+    margin: 0 50px;
+}
+.sendMail form label{
+    color: #597984;
+    font-weight: normal;
+}
+.sendMail form label span{color: #00C7FC;}
+.sendMail form input{width: 100%;}
+.sendMail form input,.sendMail form textarea{
+    font-size: 14px;
+    line-height: 40px;
+    color: #999999;
+    background: #EDF2F6;
+    border: none;
+    box-shadow: none;
+    resize: none;
+}
+.sendMail form button{
+    width: 150px;
+    margin: 15px auto 70px auto;
+}
+.sendMail form button:focus{
+    color: #FFF;
+    background-image: linear-gradient(to bottom,#37AFE5,#31A7DE);
+}
+
+@media screen and (max-width:768px) {
+    .sendMail form input{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .sendMail form{
+        margin: 0px;
+    }
+}

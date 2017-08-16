@@ -1,0 +1,168 @@
+/*
+* @Date:   2017-06-19 14:38:30
+* @Last Modified time: 2017-06-20 15:40:54
+*/
+
+/* ==========
+    初始化
+   ========== */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border: 0;
+}
+ol, ul ,li{list-style: none;}
+
+body{
+    width: 1920px;
+    font-family: '微软雅黑';
+}
+
+/* ==========
+    通用样式
+   ========== */
+a{
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+hgroup{
+    font-size: 20px;
+    font-weight: normal;
+    color: #3B8EDE;
+    line-height: 27px;
+    padding: 65px 0px 26px 0px;
+}
+hgroup h2{
+    font-size: 26px;
+}
+h2,h3{ font-weight: normal; }
+
+/* ==========
+   自定义样式
+   ========== */
+.hide{
+    display: none;
+}
+.clearfix:after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+/* ==========
+    顶部
+   ========== */
+header{
+    width: 1920px; height: 190px;
+}
+
+/** 顶部导航 **/
+#topNav{
+    width: 1200px; height: 150px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#topNav .topNav_right{
+    width: 245px; height: 90px;
+    text-align: center;
+    margin-right: 80px;
+}
+#topNav .topNav_right em:first-child{
+    color: #939494;
+    font-style: normal;
+    font-size: 16px;
+}
+#topNav .topNav_right em:nth-of-type(2){
+    color: #FF1F30;
+    font-size: 24px;
+    font-style: normal;
+    display: inline-block;
+    margin:2px 0px 3px 0px;
+}
+#topNav .topNav_right p{
+    display: flex;
+}
+#topNav .topNav_right p input{
+    width: 195px; height: 25px;
+    color: #AEA8A8;
+    text-indent: .5em;
+    font-size:13px;
+    border: #AEA8A8 1px solid;
+    margin-right: 2px;
+}
+
+/** 主导航 **/
+#mainNav{
+    width: 1920px; height: 40px;
+    font-size:15px;
+    background: #DE5A3B;
+}
+#mainNav ul{
+    width: 930px;
+    margin:0px auto;
+}
+#mainNav ul li{
+    float: left;
+}
+#mainNav ul li + li{
+    margin-left: 55px;
+}
+#mainNav ul li a{
+    width: 142px; height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    color:#FFF;
+}
+#mainNav ul li a:hover{
+    background: #3B8EDE;
+}
+
+/** 广告大图 **/
+#ad{
+    width: 1920px; height: 590px;
+    margin-bottom: 40px;
+}
+
+
+/* ==========
+    底部
+   ========== */
+footer{
+    width: 1920px; height: 228px;
+    color: #D6D6D6;
+    background: #333333;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+}
+footer ul li a{ display: inline; }
+footer ul li a:hover{ color:#3B8EDE; }
+footer ul li:not(:nth-of-type(5)){ width: 190px; }
+footer ul li:nth-of-type(5){ width: 210px; }
+footer ul li h3{
+    font-weight: normal;
+    margin: 20px 0px 16px 0px;
+}
+footer ul li .phone{
+    font-size: 26px;
+    line-height: 36px;
+}
+footer .copyRight{
+    width: 1920px; height: 30px;
+    font-size: 12px;
+    line-height:30px;
+    background: #212121;
+    position: absolute;
+    bottom: 0;
+}

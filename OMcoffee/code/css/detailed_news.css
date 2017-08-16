@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*** 导航栏附加  ***/
+.header_wrap .header ul li:nth-child(3){ color:#CE1D2D; }
+/*** 页脚附加 ***/
+.footer .footer_content .subnav_bottom span:nth-child(3) a{ color:#CD1F29; }	
+
+	
+/***整体***/
+.middle{
+	height:683px;
+	width:1200px;
+	margin:auto;
+	margin-top:42px;
+	background:url(../images/background.jpg);
+	background-repeat:no-repeat;
+	padding:20px;
+	}
+/***左上角链接***/
+.middle .minimenu span{ color:#FFF;}
+.middle .minimenu span a {
+	font-size: 12px;
+	color: #FFF;
+}
+.middle .minimenu span a:nth-child(4){ font-size:16px;}
+.middle .minimenu span a:not(:nth-child(1)):hover{ color:#CB1D2B;}
+/***文字部分***/
+.middle .content {
+	padding:20px;
+	}
+.middle .content h1 {
+	font-family:"微软雅黑";
+	color: #F9E2C3;
+	font-size:30px;
+	text-indent:45px;
+	margin-left:-22px;
+}
+.middle .content h3 {
+	font-family:"微软雅黑";
+	color:#FFF;
+	font-size:12px;
+	text-indent:45px;
+	margin-top:6px;
+	margin-left:-16px;
+}
+.middle .content h2{
+	color:#FFF;
+	font-size:12px;	
+	}
+.middle .content p {
+	font-size:12px;
+	color:#FFF;
+	text-indent:2em;
+	padding-right:30px;
+	line-height:22px;
+	}
+/***图片区***/
+.main .middle .content .contentImage {
+	padding:20px;
+	float:left
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASTRO - 首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 顶部导航 -->
+        <div class="topNav">
+            <div class="container">
+                <div class="pull-left">
+                    <img src="img/topNav_callUs.svg" alt="" width="18" height="18">
+                    <span>电话: (0) 123 456 789</span>
+                </div>
+                <div class="pull-left">
+                    <img src="img/topNav_email.svg" alt="" width="19" height="19">
+                    <span>&#8194;jetspace@mail.com</span>
+                </div>
+                <div class="pull-right">
+                    <img src="img/topNav_flag.png" alt="">
+                    <div class="dropdown pull-right">
+                        <a type="button" class="btn btn-link dropdown-toggle" id="languageDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            中文
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdownMenu">
+                            <li class="dropdown-header"><a href="#" class="btn disabled">语言</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">日语</a></li>
+                            <li><a href="#">英语</a></li>
+                            <li><a href="#">韩语</a></li>
+                            <li><a href="#">法语</a></li>
+                            <li><a href="#">西班牙语</a></li>
+                            <li><a href="#">阿拉伯语</a></li>
+                        </ul>
+                    </div><!-- dropdown end -->
+                </div>
+            </div><!-- container end -->
+        </div><!-- topNav end -->
+
+        <!-- 主导航 -->
+        <div class="mainNav navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav-navbar-collapse" aria-expanded="false" aria-controls="#mainNav-navbar-collapse">
+                        <span class="sr-only">导航</span>
+                        <span class="icon-bar">
+                            <div class="hamburger" id="hamburger-1">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="img/Logo.png" alt=""></a>
+                </div><!-- navbar-header end -->
+                <div class="collapse navbar-collapse navbar-right" id="mainNav-navbar-collapse">
+                    <ul class="nav navbar-nav text-center">
+                        <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="services.html">服务</a></li>
+                        <li class=""><a href="blog.html">博客</a></li>
+                        <li class=""><a href="aboutUs.html">关于我们</a></li>
+                        <li class=""><a href="contactUs.html">联系我们</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入搜索内容" />
+                            <span aria-hidden="true"><a href="#"><img src="img/mainNav_search.svg" alt="" width="12" height="12"><span class="sr-only">搜索</span></a></span>
+                        </div>
+                    </form>
+                </div><!-- collapse end -->
+            </div><!-- container end -->
+        </div><!-- mainNav end -->
+
+        <!-- 巨幕 -->
+        <div class="jumbotron">
+            <img src="img/index_header_bg.png" alt="">
+            <div class="container">
+                <hgroup>
+                    <h1>极速服务器</h1>
+                    <h2>安全、快速和不可思议的价格</h2>
+                </hgroup>
+                <p>Vestibulum ac diam sit amet quam wehivuls elementum sed sit amet dui. Vestibulum ac diam sit amet quam wehicula</p>
+                <p><span><img src="img/index_ad_yes.png" alt="" width="15" height="15"></span> 极速的特定供应 10元/盘</p>
+                <p><span><img src="img/index_ad_yes.png" alt="" width="15" height="15"></span> 无限制的带宽和空间</p>
+                <p><span><img src="img/index_ad_yes.png" alt="" width="15" height="15"></span> 每天的备份</p>
+            </div><!-- container end -->
+        </div><!-- jumbotron end -->
+    </header>
+
+    <!-- 主体 -->
+    <div class="main">
+        <!-- 服务器说明 -->
+        <div class="servers">
+            <div class="container text-center">
+                <h3>我们有不可思议的计划和价格</h3>
+                <p>Vivamus magna justo , lacinia eget consetctur sed , convallis at tellus . Donec sollicitudin molemelesuada . Donec soliliciusin molestie malesuada .</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/index_services_01.png" alt="">
+                        <h4>快速服务</h4>
+                        <p>Curabitue aliquet quam id dui pposy ere blandit . Curabitur</p>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <img src="img/index_services_02.png" alt="">
+                        <h4>全盘支持</h4>
+                        <p>Curabitue aliquet quam id dui pposy ere blandit . Curabitur</p>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <img src="img/index_services_03.png" alt="">
+                        <h4>安全保障</h4>
+                        <p>Curabitue aliquet quam id dui pposy ere blandit . Curabitur</p>
+                    </div>
+                </div><!-- row end -->
+            </div><!-- container end -->
+        </div><!-- servers end -->
+
+        <!-- 区块间隔条 -->
+        <div class="spacing-bar"></div>
+
+        <!-- 域名 -->
+        <div class="domain">
+            <div class="container text-center">
+                <h3>查询您的域名</h3>
+                <p>Enter the domain name to register or transger</p>
+                <div class="button-group row">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" aria-label="域名搜索" />
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">.com <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="text-center"><a href="#">.com</a></li>
+                                <li class="text-center"><a href="#">.net</a></li>
+                                <li class="text-center"><a href="#">.org</a></li>
+                                <li class="text-center"><a href="#">.cn</a></li>
+                            </ul><!-- dropdown-menu end -->
+                        </div><!-- input-group-btn end -->
+                    </div><!-- input-group end -->
+                    <button type="button" class="btn btn-lg"><span class="button-text">域名查询</span><span class="button-bg"></span></button>
+                </div><!-- button-group end -->
+                <div class="domainPrice row">
+                    <div class="domainPrice-item col-md-3 col-sm-6">
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 10GB Storage</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 500 Mail Accounts</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 10 Databases</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 512MB Rams</p>
+                        <button type="button" class="btn btn-lg"><span class="button-text">现在购买</span><span class="button-bg"></span>
+                            <div class="topCircle">
+                                BASIC<br/><span>9,99</span><br/>/mo
+                            </div>
+                        </button>
+                    </div>
+                    <div class="domainPrice-item col-md-3 col-sm-6">
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 20GB Storage</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 1000 Mail Accounts</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 20 Databases</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 1GB Rams</p>
+                        <button type="button" class="btn btn-lg"><span class="button-text">现在购买</span><span class="button-bg"></span>
+                            <div class="topCircle">
+                                PRO<br/><span>19,99</span><br/>/mo
+                            </div>
+                        </button>
+                    </div>
+                    <div class="domainPrice-item col-md-3 col-sm-6">
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 50GB Storage</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 5000 Mail Accounts</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 50 Databases</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 2GB Rams</p>
+                        <button type="button" class="btn btn-lg"><span class="button-text">现在购买</span><span class="button-bg"></span>
+                            <div class="topCircle">
+                                PREMIUM<br/><span>29,99</span><br/>/mo
+                            </div>
+                        </button>
+                    </div>
+                    <div class="domainPrice-item col-md-3 col-sm-6">
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 100GB Storage</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 10000 Mail Accounts</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 100 Databases</p>
+                        <p><img src="img/index_ad_yes.png" alt="" width="12" height="12"> 4GB Rams</p>
+                        <button type="button" class="btn btn-lg"><span class="button-text">现在购买</span><span class="button-bg"></span>
+                            <div class="topCircle">
+                                ULTRA<br/><span>49,99</span><br/>/mo
+                            </div>
+                        </button>
+                    </div><!-- domainPrice-item end -->
+                </div><!-- row end -->
+            </div><!-- container end -->
+        </div><!-- domainSearch end -->
+
+        <!-- 区块间隔条 -->
+        <div class="spacing-bar"></div>
+
+        <!-- 制定方案 -->
+        <div class="customPlan">
+            <div class="container text-center">
+                <h3>免费联系我们制定方案</h3>
+                <p>Vivamus magna justo , lacinia eget consectetur sed , convallis at tellus . Donec sollicitudin molestie malesuada . Donec sollicitudin molue ipsum</p>
+                <button type="button" class="btn btn-lg" onclick="window.location.href='contactUs.html'"><span class="button-text">联系我们</span><span class="button-bg"></span></button>
+            </div>
+        </div><!-- customPlan end -->
+
+    </div><!-- main end -->
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 clearfix">
+                    <h4>导航菜单</h4>
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="services.html">服务</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="aboutUs.html">关于我们</a></li>
+                        <li><a href="contactUs.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="clearfix">
+                        <h4>我们提供</h4>
+                        <ul>
+                            <li><a href="">商业主机</a></li>
+                            <li><a href="">私人主机</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>服务类型</h4>
+                        <ul>
+                            <li><a href="">第一服务</a></li>
+                            <li><a href="">第二服务</a></li>
+                            <li><a href="">第一服务</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>我们的博客</h4>
+                    <p>Lorem Ipsum sample text</p>
+                    <p>Vivamus suscipit tortor aget felis porttitor volutpat . Curabitur arcu erat , accumsan id imperdiet et , porttitor at sem . Curabitur arcu erat , accumsan .</p>
+                    <p><a href="singleBlog.html">Read More</a></p>
+                </div>
+                <div class="col-md-2 col-md-offset-1 col-sm-4">
+                    <h4>我们的社交工具</h4>
+                    <img src="img/footer_social.png" alt="">
+                </div>
+            </div><!-- row end -->
+            <div class="footer-mobile">
+                <a href="index.html"><span>网站</span>首页</a>
+                <a href="services.html"><span>产品</span>服务</a>
+                <a href="blog.html">博客<span>文章</span></a>
+                <a href="aboutUs.html">关于<span>我们</span></a>
+                <a href="contactUs.html">联系<span>我们</span></a>
+                <p class="copyright">Copyright C 2017 ASTRO 版权所哊</p>
+            </div><!-- footer-mobile end -->
+        </div><!-- container end -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ASTRO - 博客 - 我的博客</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/singleBlog.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/singleBlog.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <!-- 顶部导航 -->
+        <div class="topNav">
+            <div class="container">
+                <div class="pull-left">
+                    <img src="img/topNav_callUs.svg" alt="" width="18" height="18">
+                    <span>电话: (0) 123 456 789</span>
+                </div>
+                <div class="pull-left">
+                    <img src="img/topNav_email.svg" alt="" width="19" height="19">
+                    <span>&#8194;jetspace@mail.com</span>
+                </div>
+                <div class="pull-right">
+                    <img src="img/topNav_flag.png" alt="">
+                    <div class="dropdown pull-right">
+                        <a type="button" class="btn btn-link dropdown-toggle" id="languageDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            中文
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdownMenu">
+                            <li class="dropdown-header"><a href="#" class="btn disabled">语言</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">中文</a></li>
+                            <li><a href="#">日语</a></li>
+                            <li><a href="#">英语</a></li>
+                            <li><a href="#">韩语</a></li>
+                            <li><a href="#">法语</a></li>
+                            <li><a href="#">西班牙语</a></li>
+                            <li><a href="#">阿拉伯语</a></li>
+                        </ul>
+                    </div><!-- dropdown end -->
+                </div>
+            </div><!-- container end -->
+        </div><!-- topNav end -->
+
+        <!-- 主导航 -->
+        <div class="mainNav navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav-navbar-collapse" aria-expanded="false" aria-controls="#mainNav-navbar-collapse">
+                        <span class="sr-only">导航</span>
+                        <span class="icon-bar">
+                            <div class="hamburger" id="hamburger-1">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="img/Logo.png" alt=""></a>
+                </div><!-- navbar-header end -->
+                <div class="collapse navbar-collapse navbar-right" id="mainNav-navbar-collapse">
+                    <ul class="nav navbar-nav text-center">
+                        <li class="active"><a href="index.html">首页<span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="services.html">服务</a></li>
+                        <li class=""><a href="blog.html">博客</a></li>
+                        <li class=""><a href="aboutUs.html">关于我们</a></li>
+                        <li class=""><a href="contactUs.html">联系我们</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入搜索内容" />
+                            <span aria-hidden="true"><a href="#"><img src="img/mainNav_search.svg" alt="" width="12" height="12"><span class="sr-only">搜索</span></a></span>
+                        </div>
+                    </form>
+                </div><!-- collapse end -->
+            </div><!-- container end -->
+        </div><!-- mainNav end -->
+
+        <!-- 巨幕 -->
+        <div class="jumbotron">
+            <img src="img/services_header_bg.jpg" alt="">
+            <div class="container text-center">
+                <h2>我们的博客</h2>
+                <p>Viva  magna justo , lacinia eget consectetur sed , convallis at tellus . Donec sollicitudin .</p>
+            </div><!-- container end -->
+        </div><!-- jumbotron end -->
+    </header>
+
+    <!-- 主体 -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <!-- 左边 -->
+                <div class="col-md-9 left-content">
+                    <!-- 博客内容 -->
+                    <div class="blog-item">
+                        <img src="img/blog_leftContent_blog_01.png" alt="">
+                        <p class="blog-title">这是博客的神奇标题</p>
+                        <p class="blog-info">
+                            <span class="blog-time"><span class="sr-only">发布日期</span><img src="img/blog_icon_date.svg" alt="" width="12" height="12"> 23 September 2013</span>
+                            <span class="blog-author"><span class="sr-only">作者</span><img src="img/blog_icon_user.svg" alt="" width="14" height="14"> By: John Doe</span>
+                            <span class="blog-comment"><span class="sr-only">评论人数</span><img src="img/blog_icon_comment.svg" alt="" width="14" height="14"> 7 Comments</span>
+                        </p>
+                        <p class="blog-content">Vivamus magna justo , lacinia eget consectrtur sed , convallis at tellus . Donec sollicitudin molestie malesuada . Donecs sollicitudin molue in ipsum consecetur sed , convallis at tellus . Docec solllicitudin molestie malesuada . Donec sollicitudin molue in ipsum<br/><br/>Vivamus magna justo , lacinia eget consectrtur sed , convallis at tellus . Donec sollicitudin molestie malesuada . Donecs sollicitudin molue in ipsum consecetur sed , convallis at tellus . Docec solllicitudin molestie malesuada . Donec sollicitudin molue in ipsumVivamus magna justo , lacinia eget consectrtur sed , convallis at tellus . Donec sollicitudin molestie malesuada . Donecs sollicitudin molue in ipsum consecetur sed , convallis at tellus . Docec <br/><br/><span class="highlight">"Duo magna cetero blandit at , argumentum vituperatoribus quo id , eirmod laoreet lobortis in cum . Ei vide habeo repudiare duo"</span><br/>Vivamus magna justo , lacinia eget consectrtur sed , convallis at tellus . Donec sollicitudin molestie malesuada . Donecs sollicitudin molue in ipsum consecetur sed , convallis at tellus . Docec solllicitudin molestie malesuada . Donec sollicitudin molue in ipsum<br/><br/>Vivamus magna justo , lacinia eget consectrtur sed , convallis at tellus . Donec sollicitudin molestie malesuada . Donecs sollicitudin molue in ipsum consecetur sed , convallis ipsum consecetur sed , convallis</p>
+                        <p class="blog-share clearfix">
+                            <button class="btn btn-sm">3</button>
+                            <button class="btn btn-sm"><img src="img/singleBlog_social_google.png" alt=""> Google+</button>
+                            <button class="btn btn-sm">3</button>
+                            <button class="btn btn-sm"><img src="img/singleBlog_social_twitter.png" alt=""> Tweet</button>
+                            <button class="btn btn-sm">3</button>
+                            <button class="btn btn-sm"><img src="img/singleBlog_social_facebook.png" alt=""> Like</button>
+                        </p>
+                    </div><!-- blog-item end -->
+
+                    <!-- 评论列表 -->
+                    <div class="comments">
+                        <h3>评论列表<img src="img/singleBlog_leftContent_title.png" id="leftContent-title" alt="" /></h3>
+                        <ul class="media-list">
+                            <li class="media comment-item">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/singleBlog_leftContent_avator.png"></img>
+                                    </a>
+                                    <span class="comment-author">John Doe</span>
+                                </div>
+                                <div class="media-body">
+                                    <p class="comment-info">
+                                        <span class="comment-author"><span class="sr-only">作者</span><img src="img/blog_icon_user.svg" alt="" width="14" height="14"> John Doe</span>
+                                        <span class="comment-date"><span class="sr-only">发布日期</span><img src="img/blog_icon_date.svg" alt="" width="12" height="12"> 9-23 <span class="gray">2013 at</span> 20:34</span>
+                                        <span class="comment-replay"><a href="">回复</a></span>
+                                    </p>
+                                    <p class="comment-content"></span>Expetenda usu , consul impedit ut nam . Duo magna cetero blandit at , argunmentum vituperatoribus quo id , eirmod laoreet lobortis in cum . Ei vide habeo repudiare duo , eiaeque mea argunmentum vituperatoribus quo id , eirmod laoreet</p>
+                                </div><!-- media-body -->
+                            </li><!-- comment-item end -->
+                            <li class="media comment-item">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/singleBlog_leftContent_avator.png"></img>
+                                    </a>
+                                    <span class="comment-author">John Doe</span>
+                                </div>
+                                <div class="media-body">
+                                    <p class="comment-info">
+                                        <span class="comment-author"><span class="sr-only">作者</span><img src="img/blog_icon_user.svg" alt="" width="14" height="14"> John Doe</span>
+                                        <span class="comment-date"><span class="sr-only">发布日期</span><img src="img/blog_icon_date.svg" alt="" width="12" height="12"> 9-23 <span class="gray">2013 at</span> 20:34</span>
+                                        <span class="comment-replay"><a href="">回复</a></span>
+                                    </p>
+                                    <p class="comment-content">Expetenda usu , consul impedit ut nam . Duo magna cetero blandit at , argunmentum vituperatoribus quo id , eirmod laoreet lobortis in cum . Ei vide habeo repudiare duo , eiaeque mea</p>
+                                </div><!-- media-body -->
+                            </li><!-- comment-item end -->
+                            <li class="media comment-item">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/singleBlog_leftContent_avator.png">
+                                    </a>
+                                    <span class="comment-author">John Doe</span>
+                                </div>
+                                <div class="media-body">
+                                    <p class="comment-info">
+                                        <span class="comment-author"><span class="sr-only">作者</span><img src="img/blog_icon_user.svg" alt="" width="14" height="14"> John Doe</span>
+                                        <span class="comment-date"><span class="sr-only">发布日期</span><img src="img/blog_icon_date.svg" alt="" width="12" height="12"> 9-23 <span class="gray">2013 at</span> 20:34</span>
+                                        <span class="comment-replay"><a href="">回复</a></span>
+                                    </p>
+                                    <p class="comment-content">Expetenda usu , consul impedit ut nam . Duo magna cetero blandit at , argunmentum vituperatoribus quo id , eirmod laoreet lobortis in cum . Ei vide habeo repudiare duo , eiaeque mea argunmentum</p>
+                                </div><!-- media-body -->
+                            </li><!-- comment-item end -->
+                            <li class="media comment-item">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/singleBlog_leftContent_avator.png"></img>
+                                    </a>
+                                    <span class="comment-author">John Doe</span>
+                                </div>
+                                <div class="media-body">
+                                    <p class="comment-info">
+                                        <span class="comment-author"><span class="sr-only">作者</span><img src="img/blog_icon_user.svg" alt="" width="14" height="14"> John Doe</span>
+                                        <span class="comment-date"><span class="sr-only">发布日期</span><img src="img/blog_icon_date.svg" alt="" width="12" height="12"> 9-23 <span class="gray">2013 at</span> 20:34</span>
+                                        <span class="comment-replay"><a href="">回复</a></span>
+                                    </p>
+                                    <p class="comment-content">Expetenda usu , consul impedit ut nam . Duo magna cetero blandit at , argunmentum vituperatoribus quo id , eirmod laoreet lobortis in cum . Ei vide habeo repudiare duo , eiaeque mea argunmentum vituperatoribus quo id , eirmod laoreet</p>
+                                </div><!-- media-body -->
+                            </li><!-- comment-item end -->
+                        </ul><!-- media-list end -->
+                    </div><!-- comments end -->
+
+                    <!-- 写评论 -->
+                    <div class="writeComment">
+                        <h3>留下评论<img src="img/singleBlog_leftContent_title.png" id="leftContent-title-02" alt="" /></h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="comment-name">Name <span>*</span></label>
+                                <input type="text" class="form-control input-lg" id="comment-name" placeholder="请输入您的昵称" name="">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-email">Email <span>*</span></label>
+                                <input type="text" class="form-control input-lg" id="comment-email" placeholder="请输入您的邮箱" name="">
+                            </div>
+                            <div class="form-group">
+                                <label for="comment-message">Message <span>*</span></label>
+                                <textarea class="form-control" id="comment-message" rows="4" placeholder="请输入您的留言" name=""></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-lg"><span class="button-text">提交留言</span><span class="button-bg"></span></button>
+                        </form>
+                    </div><!-- writeComment end -->
+                </div><!-- left-content end -->
+
+                <!-- 右边 -->
+                <div class="col-md-3 right-content">
+                    <!-- 博客搜索 -->
+                    <div class="searchBlog">
+                        <h3>博客搜索<img src="img/blog_rightContent_title.png" alt="" /></h3>
+                        <button><input type="text" name="" placeholder="请输入您要搜索的关键词"><a href="#"><span class="sr-only">搜索</span><img src="img/mainNav_search.svg" alt="" width="12" height='12'></a></button>
+                    </div>
+                    <!-- 目录 -->
+                    <div class="category">
+                        <h3>博客目录<img src="img/blog_rightContent_title.png" alt="" /></h3>
+                        <ul>
+                            <li><a href="">Graphic Design</a><span class="newBlog">(3)</span></li>
+                            <li><a href="">Video</a><span class="newBlog">(7)</span></li>
+                            <li><a href="">Audio</a><span class="newBlog">(3)</span></li>
+                            <li><a href="">Business</a><span class="newBlog">(9)</span></li>
+                            <li><a href="">Photography</a><span class="newBlog">(5)</span></li>
+                            <li><a href="">Web Design</a><span class="newBlog">(11)</span></li>
+                            <li><a href="">Media</a><span class="newBlog">(6)</span></li>
+                        </ul>
+                    </div><!-- category end -->
+                    <!-- 档案 -->
+                    <div class="archive">
+                        <h3>博客档案<img src="img/blog_rightContent_title.png" alt="" /></h3>
+                        <ul>
+                            <li><a href="">January</a><span class="newBlog">(3)</span></li>
+                            <li><a href="">February</a><span class="newBlog">(7)</span></li>
+                            <li><a href="">March</a><span class="newBlog">(3)</span></li>
+                            <li><a href="">Aprill</a><span class="newBlog">(9)</span></li>
+                            <li><a href="">May</a><span class="newBlog">(5)</span></li>
+                            <li><a href="">June</a><span class="newBlog">(11)</span></li>
+                            <li><a href="">July</a><span class="newBlog">(615)</span></li>
+                            <li><a href="">Avgust</a><span class="newBlog">(7)</span></li>
+                            <li><a href="">September</a><span class="newBlog">(9)</span></li>
+                            <li><a href="">October</a><span class="newBlog">(5)</span></li>
+                            <li><a href="">November</a><span class="newBlog">(11)</span></li>
+                            <li><a href="">December</a><span class="newBlog">(6)</span></li>
+                        </ul>
+                    </div><!-- archive end -->
+                </div><!-- right-content end -->
+            </div><!-- row end -->
+
+        </div><!-- container end -->
+    </div><!-- main end -->
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 clearfix">
+                    <h4>导航菜单</h4>
+                    <ul>
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="services.html">服务</a></li>
+                        <li><a href="blog.html">博客</a></li>
+                        <li><a href="aboutUs.html">关于我们</a></li>
+                        <li><a href="contactUs.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="clearfix">
+                        <h4>我们提供</h4>
+                        <ul>
+                            <li><a href="">商业主机</a></li>
+                            <li><a href="">私人主机</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>服务类型</h4>
+                        <ul>
+                            <li><a href="">第一服务</a></li>
+                            <li><a href="">第二服务</a></li>
+                            <li><a href="">第一服务</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>我们的博客</h4>
+                    <p>Lorem Ipsum sample text</p>
+                    <p>Vivamus suscipit tortor aget felis porttitor volutpat . Curabitur arcu erat , accumsan id imperdiet et , porttitor at sem . Curabitur arcu erat , accumsan .</p>
+                    <p><a href="singleBlog.html">Read More</a></p>
+                </div>
+                <div class="col-md-2 col-md-offset-1 col-sm-4">
+                    <h4>我们的社交工具</h4>
+                    <img src="img/footer_social.png" alt="">
+                </div>
+            </div><!-- row end -->
+            <div class="footer-mobile">
+                <a href="index.html"><span>网站</span>首页</a>
+                <a href="services.html"><span>产品</span>服务</a>
+                <a href="blog.html">博客<span>文章</span></a>
+                <a href="aboutUs.html">关于<span>我们</span></a>
+                <a href="contactUs.html">联系<span>我们</span></a>
+                <p class="copyright">Copyright C 2017 ASTRO 版权所哊</p>
+            </div><!-- footer-mobile end -->
+        </div><!-- container end -->
+    </footer>
+</body>
+</html>

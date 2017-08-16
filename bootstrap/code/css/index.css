@@ -1,0 +1,187 @@
+/* =============
+    自定义样式
+   ============= */
+
+/**** 头部 ****/
+/** 主导航 **/
+.mainNav .collapse ul li:first-child a{
+    background-image: linear-gradient(to bottom,#EEF2F6,#FFF);
+    border-top: 3px solid #31A7DE;
+}
+@media screen and (max-width:768px){
+    .mainNav .collapse ul li:first-child a{
+        color: #31A7DE;
+        background: none;
+        border-top: none;
+    }
+}
+
+/** 巨幕 **/
+.jumbotron{
+    padding: 0; margin: 0;
+    color: #FFF;
+    background: transparent;
+}
+.jumbotron > img{
+    width: 100%;
+    z-index: -10;
+    position: absolute;
+}
+.jumbotron hgroup{margin-top: 30px;}
+.jumbotron p{
+    width: 460px;
+    font-size: 16px;
+}
+.jumbotron p:not(:first-of-type){margin-left: 15px;}
+.jumbotron p:nth-of-type(2){margin-top: 30px;}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+    .jumbotron hgroup h1{
+        font-size: 40px;
+    }
+    .jumbotron hgroup h2{
+        font-size: 18px;
+    }
+    .jumbotron p{
+        width: 360px;
+        line-height: 14px;
+    }
+    .jumbotron p:first-of-type{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .jumbotron > img{
+        position: relative;
+    }
+    .jumbotron{
+        color: #666;
+        text-align: center;
+    }
+    .jumbotron p:first-of-type{
+        display: none;
+    }
+    .jumbotron p:not(:first-of-type){
+        width: 195px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+}
+@media screen and (max-width:426px){
+    .jumbotron hgroup h1{
+        font-size: 34px;
+    }
+    .jumbotron hgroup h2{
+        font-size: 20px;
+    }
+}
+
+/**** 主体 ****/
+
+/** 服务器说明 **/
+.servers .container .row{margin-left: 9.3%;}
+.servers .container .row h4{margin: 35px 0 22px 0;}
+.servers .container .row p{color: #637988;}
+
+@media screen and (max-width:992px){
+    .servers .container .row{
+        margin-left: 0;
+    }
+    .servers .container .row .col-md-3{
+        margin-bottom: 50px;
+    }
+}
+
+/** 域名 **/
+.domain{margin-bottom: 40px;}
+.domain .button-group{
+    width: 60%;
+    background-image: linear-gradient(to bottom,#FFF,#EAEFF3);
+    border: 2px solid #EBEEF1;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 0px auto;
+    margin-top: -30px;
+}
+.domain .button-group .input-group{
+    width: 75%;
+    float: left;
+}
+.domain .button-group .input-group button{text-decoration: none;}
+.domain .button-group .input-group ul{
+    font-size: 16px;
+    background-image: linear-gradient(to bottom,#EAEFF3,#F1F5F8);
+    border: none;
+    margin-top: 6px;
+}
+.domain .button-group .input-group ul li a{
+    line-height: 30px;
+    color: #31A7DE;
+}
+.domain .button-group .input-group input,.domain .button-group .input-group button{
+    border: 2px solid #EBEEF1;
+    box-shadow: none;
+    background: transparent;
+}
+.domain .domainPrice .domainPrice-item{
+    height: 310px;
+    background: url(../img/index_price_bg.png) no-repeat center center;
+    margin-top: 8%;
+    padding-top: 160px;
+}
+.domain .domainPrice .domainPrice-item p{
+    width: 220px;
+    line-height: 21px;
+    font-size: 10px;
+    color: #637988;
+    text-align: left;
+    margin: 0px auto;
+    padding-left: 50px;
+}
+.domain .domainPrice .domainPrice-item button{
+    width: 110px;
+    margin-top: 15px;
+    position: relative;
+}
+.domain .domainPrice .domainPrice-item .topCircle{
+    width: 102px; height: 102px;
+    line-height: 17px;
+    font-size: 10px;
+    background-image: linear-gradient(to bottom,#41BDEF,#31A7DE);
+    padding-top: 16px;
+    border: 12px solid #FFF;
+    border-radius: 60px;
+    position: absolute;
+    top: -308px; left: 2px;
+}
+.domain .domainPrice .domainPrice-item .topCircle span{font-size: 20px;}
+
+@media screen and (max-width:992px){
+    .domain .domainPrice .domainPrice-item{
+        margin-top: 70px;
+    }
+}
+@media screen and (min-width:590px) and (max-width:768px){
+    .domain .domainPrice .domainPrice-item{
+        width: 50%;
+        float: left;
+    }
+    .domain .domainPrice{
+        width: 90%;
+        margin: 0px 5%;
+    }
+}
+@media screen and (max-width:600px){
+    .domain .button-group{
+        width: 80%;
+    }
+}
+@media screen and (max-width:400px){
+    .domain .button-group{
+        width: 100%;
+    }
+    .domain .button-group .input-group button{
+        font-size: 12px;
+    }
+}

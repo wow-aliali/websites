@@ -1,0 +1,93 @@
+/*
+* @Date:   2017-06-22 20:50:06
+* @Last Modified time: 2017-06-27 13:54:18
+*/
+
+/* ==========
+    主要内容
+   ========== */
+/** 留言 **/
+.message h1{
+    color: #3B8EDE;
+    line-height: 60px;
+    text-indent: .8em;
+    border-bottom: 1px #BFBFBF solid;
+}
+.message input,.message textarea,.message a.submit{
+    text-indent: 1em;
+    color: #A1A1A1;
+    font-size: 15px;
+    margin: 25px 5% 0px 5%;
+    border: 1px #3B8EDE solid
+}
+@media screen and (min-width: 420px) and (max-width: 800px) {
+    .message input,.message textarea{
+        font-size: 18px;
+    }
+}
+.message input:first-of-type{
+    width: 40%; height: 42px;
+}
+.message input:nth-of-type(2){
+    width: 65%; height: 42px;
+}
+.message textarea{
+    width: 90%; height: 130px;
+    padding-top: 15px;
+}
+.message input:last-of-type{
+    float: right;
+    font-size: 16px;
+    color: #666666;
+    background: transparent;
+    border: none;
+    margin: 10px 5% 20px 0px;
+}
+.message a.submit{
+    position: relative;
+    width: 90%; height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-indent: 0em;
+    font-size: 26px;
+    color: #FFF;
+    background: #3B8EDE;
+    overflow: hidden;
+}
+/** 提交按钮水波纹 **/
+.message a.submit .circle{
+    width: 0px; height: 0px;
+    position: absolute;
+    left: 50%; top: 50%;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+@keyframes z{
+    100%{
+        width: 110%;
+        height: 300px;
+        left: -5%;
+        top: -250%;
+    }
+}
+.waterRipple{
+    animation: z 1s ease;
+    background: #89CFF0;
+}
+
+/** 公司地址 **/
+.address h1{
+    color: #3B8EDE;
+    line-height: 60px;
+    text-indent: .8em;
+    border-top: 1px #BFBFBF solid;
+}
+.address p{
+    width: 92%;
+    margin: 0px 4%;
+    font-size: 17px;
+    color: #666666;
+    line-height: 35px;
+}
+.address p:first-of-type{ margin-top: 16px; }
+.address p:last-of-type{ margin-bottom: 22px; }

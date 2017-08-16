@@ -1,0 +1,37 @@
+/*
+* @Date:   2017-06-21 20:58:39
+* @Last Modified time: 2017-06-25 22:04:30
+*/
+
+
+/* ==========
+    主要内容
+   ========== */
+.container h1{
+    width: 100%; height: 62px;
+    color: #3B8EDE;
+    line-height: 62px;
+    text-indent: 1em;
+    border-bottom: 1px #BFBFBF solid;
+    margin-bottom: 30px;
+}
+.container p{
+    width: 90%;
+    margin: 15px 5% 30px 5%;
+    font-size: 18px;
+    line-height: 36px;
+    color: #5F5F5F;
+}
+@media screen and (min-width: 420px) and (max-width: 800px) {
+    .container h1{
+        margin-bottom: 45px;
+    }
+    .container p{
+        font-size: 21px;
+        line-height: 40px;
+    }
+}
+.container img{
+    width: 94%;
+    margin: 0px 3%;
+}

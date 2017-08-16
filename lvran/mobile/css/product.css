@@ -1,0 +1,54 @@
+/*
+* @Date:   2017-06-22 19:47:04
+* @Last Modified time: 2017-06-22 22:58:08
+*/
+/* =========
+    头部
+   ========= */
+header nav{ background: #E3E3E3; }
+header nav ul{
+    display: flex;
+    margin: 0px 3%;
+}
+header nav ul li{
+    width: 25%; height: 70px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 70px;
+    color: #444444;
+    position: relative;
+}
+header nav ul li span{
+    width: 95%; height: 6px;
+    border-radius: 2px;
+    background: #3B8EDE;
+    position: absolute;
+    left: 2.5%;
+    bottom: 3px;
+    display: none;
+}
+@media screen and (min-width: 420px) and (max-width: 800px) {
+    header nav ul li{
+        font-size: 21px;
+    }
+}
+
+/* =========
+    主要内容
+   ========= */
+.product_list{
+    width: 94%;
+    margin: 0px 3% 42px 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_list a{
+    width: 48%;
+    margin:25px 1% 0px 1%;
+}
+@media screen and (min-width: 550px) and (max-width: 800px) {
+    .product_list a{
+        width: 31.3333%;
+        margin:25px 1% 0px 1%;
+    }
+}

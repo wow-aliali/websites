@@ -1,0 +1,126 @@
+/*
+* @Date:   2017-06-20 15:46:12
+* @Last Modified time: 2017-06-20 21:57:30
+*/
+
+
+/* ==========
+    主要区域
+   ========== */
+#container{
+    width: 1200px;
+    margin:0px auto;
+    text-align: center;
+    display: flex;
+}
+
+/** 左导航 **/
+.leftNav{
+    width: 240px;
+}
+.leftNav h2{
+    color: #3B8EDE;
+    margin-top: 10px;
+}
+.leftNav h3{
+    color: #2D68A1;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+.leftNav ul li + li{
+    margin-top: 16px;
+}
+.leftNav ul li a{
+    width: 240px; height: 50px;
+    color: #FAFCFE;
+    background: #3B8EDE;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+}
+.leftNav ul li a:hover{
+    background: #2D68A1;
+}
+
+/** 右联系我们 **/
+.contactus_wrap{
+    width: 935px;
+    margin-left: 25px;
+}
+.contactus_wrap .submenu{
+    color: #C0C0C0;
+    margin-top: 44px;
+    border-bottom: #C0C0C0 2px solid;
+}
+.contactus_wrap .submenu span{
+    font-size: 15px;
+    float: right;
+    display: flex;
+}
+.contactus_wrap .submenu span a:hover{ color:#3B8EDE; }
+
+.contactus{
+    width: 918px; height: 920px;
+    margin:38px 0px 0px 16px;
+}
+.contactus > img{
+    margin-bottom: 24px;
+}
+/* 留言 */
+.contactus .message{
+    width: 430px; height: 480px;
+    color: #494949;
+    float: left;
+}
+.contactus .message input[type="text"],.contactus .message textarea{
+    font-size:20px;
+    text-indent: .5em;
+    color: #585858;
+}
+.contactus .message input[type="text"]{
+    width: 410px; height: 48px;
+    border: #BEBDBD 1px solid;
+    margin-bottom: 20px;
+}
+.contactus .message textarea{
+    width: 410px; height: 175px;
+    border: #BEBDBD 1px solid;
+    padding: 10px 0px;
+}
+.contactus .message > p{
+    height: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.contactus .message input.idcode{
+    width: 70px; height: 25px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.contactus .message input[type="submit"]{
+    width: 80px; height: 40px;
+    color: #FFF;
+    background: #2D68A1;
+    font-size: 18px;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+}
+/* 联系信息 */
+.contactus .contact_info > img{
+    margin: 0px 0px 26px 26px;
+}
+.contactus .contact_info h2{
+    line-height: 55px;
+    text-indent: 1.7em;
+    text-align: left;
+}
+.contactus .contact_info p{
+    font-size: 15px;
+    line-height: 26px;
+    text-indent: 3em;
+    text-align: left;
+}
