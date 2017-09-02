@@ -119,14 +119,17 @@ header a:hover{color: #333;}
     cursor: pointer;
 }
 .top-nav .mobile-menu-button span{
-    width: 42px; height: 6px;
+    width: 30px; height: 4px;
     margin: 0px auto;
     border-radius: 60px;
     display: block;
     background: #FFF;
 }
+.top-nav .mobile-menu-button span:nth-of-type(2){
+    width: 38px;
+}
 .top-nav .mobile-menu-button span:first-of-type{
-    margin-top: 12px;
+    margin-top: 15px;
 }
 .top-nav .mobile-menu-button span + span{
     margin-top: 5px;
@@ -155,10 +158,10 @@ header a:hover{color: #333;}
   opacity: 0;
 }
 .mobile-menu-button.is-active span:nth-child(1){
-  transform: translateY(11px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 .mobile-menu-button.is-active span:nth-child(3){
-  transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 .top-nav .shop-car button{
